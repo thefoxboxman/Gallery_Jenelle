@@ -6,7 +6,11 @@ import styled from "styled-components";
 
 export const query = graphql`
 	{
-		allSanityPost(sort: { fields: [publishedAt], order: [DESC] }, limit: 92) {
+		allSanityPost(
+			sort: { fields: [publishedAt], order: [ASC] }
+			skip: 93
+			limit: 92
+		) {
 			edges {
 				node {
 					_id
@@ -29,29 +33,17 @@ export const query = graphql`
 	}
 `;
 
-const IndexPage = ({ data }) => (
+const AprilJune = ({ data }) => (
 	<Layout>
 		<BannerWapper>
 			<h1 id="banner">Jenelle's Photo A Day</h1>
-			<h1 id="banner">One photo for each day of 2019</h1>
+			<h1 id="banner">April - June 2019</h1>
 		</BannerWapper>
 
-		<ul style={{ listStyle: "none" }}>
+		<ul className="myUl">
 			{data.allSanityPost.edges.map(({ node: post }) => (
 				<li key={post._id}>
-					{/*		<h2 style={{
-
-						textAlign: "center",
-
-						flex: '1 45%',
-						flexWrap: 'wrap',
-						maxWidth: '45%',
-						margin: '2rem'
-					}}>{post.title}</h2>
-          <Image fluid={post.mainImage.asset.fluid} alt={post.title} />
-
-
-				*/}
+					{}
 					<DisplayWrapper>
 						<div id="container">
 							<div id="title">{post.title}</div>
@@ -69,7 +61,7 @@ const IndexPage = ({ data }) => (
 	</Layout>
 );
 
-export default IndexPage;
+export default AprilJune;
 
 /* CSS in JS Style Components */
 
@@ -84,6 +76,10 @@ const BannerWapper = styled.div`
 `; /* end BannerWrapper */
 
 const DisplayWrapper = styled.div`
+	ul {
+		list-style-type: none;
+	}
+
 	#container {
 		/* grid area declarations */
 
