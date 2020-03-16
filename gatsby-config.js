@@ -1,6 +1,11 @@
+// require .env file data for sanity
+//require("dotenv").config({
+// path: `.env.${process.env.NODE_ENV}`,
+//})
+
 module.exports = {
   siteMetadata: {
-    title: `Jenelle's Photo A Day`,
+    title: `Jenelle's Gallery 2020`,
     description: `The best of the best`,
     author: `John De Costa`,
   },
@@ -20,7 +25,7 @@ module.exports = {
     {
       resolve: "gatsby-source-sanity",
       options: {
-        projectId: "j4wskw2e",
+        projectId: "qv9z0tsa",
         dataset: "production",
       },
     },

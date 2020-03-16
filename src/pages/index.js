@@ -6,17 +6,17 @@ import styled from "styled-components"
 
 export const query = graphql`
   {
-    allSanityPost(sort: { fields: [publishedAt], order: [DESC] }, limit: 92) {
+    allSanityPhotos(sort: { fields: [date], order: [DESC] }) {
       edges {
         node {
           _id
+          date
           title
           description
-          publishedAt
           slug {
             current
           }
-          mainImage {
+          image {
             asset {
               fluid {
                 ...GatsbySanityImageFluid
@@ -36,16 +36,16 @@ const IndexPage = ({ data }) => (
     </BannerWapper>
 
     <ul style={{ listStyle: "none" }}>
-      {data.allSanityPost.edges.map(({ node: post }) => (
-        <li key={post._id}>
+      {data.allSanityPhotos.edges.map(({ node: photo }) => (
+        <li key={photo._id}>
           <DisplayWrapper>
             <div id="container">
-              <div id="title">{post.title}</div>
+              <div id="title">{photo.title}</div>
               <div id="image">
-                <Image fluid={post.mainImage.asset.fluid} alt={post.title} />
+                <Image fluid={photo.image.asset.fluid} alt={photo.title} />
               </div>
               <div id="text">
-                {post.description}................{post.publishedAt}
+                {photo.description}................{photo.date}
               </div>
             </div>
           </DisplayWrapper>
