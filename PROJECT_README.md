@@ -1,29 +1,31 @@
-***Jenelle's Gallery***
+# Jenelle's Gallery
 
-**Project File**
+## Project File
 ~/Gallery_Jenelle
 
-**Sanity Project File**
+## Sanity Project File
 
 ~/Gallery_Jenelle/galleryjenelle2020
 
-In here edit schema.js.
+In here edit *schema.js*.
 
-Run $ sanity deploy from inside this directory
+Run *$ sanity deploy* from inside this directory
 
-**GitHub Repo:**
+## GitHub Repo:
 
 https://github.com/thefoxboxman/Gallery_Jenelle.git
 
-**Sanity CMS:**
+## Sanity CMS:
 
 Login through Lastpass (as for Photo a Day site) using Github logon
 
-**Image File Size**
+**Webhook** links Sanity CMS to Netlify. Changes on Sanity will trigger rebuild of site in Netlify.
+
+## Image File Size
 
 Export from Lr at 3000k resolution 72 dpi with watermark
 
-**Live Site**
+## Live Site
 
 https://gallery-jenelle.netlify.com/
 
