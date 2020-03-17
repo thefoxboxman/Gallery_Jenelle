@@ -12,6 +12,7 @@ const Navbar = () => {
               Home
             </Link>
           </li>
+          {/*
           <li>
             <Link to="/JanMar" className="nav-link">
               Jan-March
@@ -32,6 +33,7 @@ const Navbar = () => {
               Oct-Dec
             </Link>
           </li>
+  */}
         </ul>
       </nav>
     </NavWrapper>
@@ -43,7 +45,7 @@ export default Navbar
 //style the navbar with media query
 const NavWrapper = styled.div`
   .navbar {
-    padding-top: 15px;
+    padding-top: 10px;
     border-top: solid 0.1rem white;
     border-bottom: solid 0.1rem white;
   }
@@ -62,15 +64,15 @@ const NavWrapper = styled.div`
 
     border: solid 0.1rem white;
     border-radius: 0.3rem;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     padding: 0.1rem 0.5rem;
     margin: 1rem;
     text-transform: capitalize;
   }
   .nav-link:hover {
-    font-size: 1.1rem;
-    background: black;
-    color: white;
+    font-size: 1rem;
+    background: white;
+    color: black;
     cursor: pointer;
   }
 `

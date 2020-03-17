@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import styled from "styled-components"
 
 const Footer = () => {
@@ -10,12 +10,24 @@ const Footer = () => {
         <a href="https://www.eaglefox.com.au">... Eaglefox</a>
       </footer>
     </FooterWrapper>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
 
 const FooterWrapper = styled.div`
   display: flex;
   justify-content: center;
-`;
+  font-size: 0.8rem;
+  a {
+    color: whitesmoke;
+  }
+  a:link {
+    color: whitesmoke;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: lightblue;
+  }
+`
