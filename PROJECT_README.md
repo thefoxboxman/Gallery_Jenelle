@@ -1,5 +1,23 @@
-**Jenelle's Gallery**
+***Jenelle's Gallery***
 
+**Project File**
+~/Gallery_Jenelle
+
+**Sanity Project File**
+
+~/Gallery_Jenelle/galleryjenelle2020
+
+In here edit schema.js.
+
+Run $ sanity deploy from inside this directory
+
+**GitHub Repo:**
+
+https://github.com/thefoxboxman/Gallery_Jenelle.git
+
+**Sanity CMS:**
+
+Login through Lastpass (as for Photo a Day site) using Github logon
 
 
 **Live Site**
