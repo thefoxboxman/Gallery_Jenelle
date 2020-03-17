@@ -19,6 +19,9 @@ https://github.com/thefoxboxman/Gallery_Jenelle.git
 
 Login through Lastpass (as for Photo a Day site) using Github logon
 
+**Image File Size**
+
+Export from Lr at 3000k resolution 72 dpi with watermark
 
 **Live Site**
 

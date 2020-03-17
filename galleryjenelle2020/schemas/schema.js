@@ -51,8 +51,36 @@ export default createSchema({
           name: 'date',
           type: 'date',
         },
-        
-
+        {
+          title: 'Awards',
+          name: 'awards',
+          type: 'boolean',
+        },
+        {
+          title: 'Astro',
+          name: 'astro',
+          type: 'boolean',
+        },
+        {
+          title: 'Birds',
+          name: 'birds',
+          type: 'boolean',
+        },
+        {
+          title: 'Flowers',
+          name: 'flowers',
+          type: 'boolean',
+        },
+        {
+          title: 'Landscapes',
+          name: 'landscapes',
+          type: 'boolean',
+        },
+        {
+          title: 'Macro',
+          name: 'macro',
+          type: 'boolean',
+        },
       ],
     },
   ]),
