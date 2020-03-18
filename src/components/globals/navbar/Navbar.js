@@ -12,28 +12,36 @@ const Navbar = () => {
               Home
             </Link>
           </li>
-          {/*
+
           <li>
-            <Link to="/JanMar" className="nav-link">
-              Jan-March
+            <Link to="/flowers" className="nav-link">
+              Flowers
             </Link>
           </li>
+
           <li>
-            <Link to="/AprJun" className="nav-link">
-              April-June
+            <Link to="/birds" className="nav-link">
+              Birds
             </Link>
           </li>
+
           <li>
-            <Link to="/JulySept" className="nav-link">
-              July-Sept
+            <Link to="/awards" className="nav-link">
+              Awards
             </Link>
           </li>
+
           <li>
-            <Link to="/OctDec" className="nav-link">
-              Oct-Dec
+            <Link to="/macro" className="nav-link">
+              Macro
             </Link>
           </li>
-  */}
+
+          <li>
+            <Link to="/astro" className="nav-link">
+              Astro
+            </Link>
+          </li>
         </ul>
       </nav>
     </NavWrapper>

@@ -6,7 +6,7 @@ import styled from "styled-components"
 
 export const query = graphql`
   {
-    allSanityPhotos(filter: { flowers: { eq: true } }) {
+    allSanityPhotos(filter: { landscapes: { eq: true } }) {
       edges {
         node {
           _id
@@ -26,11 +26,11 @@ export const query = graphql`
   }
 `
 
-const FlowersPage = ({ data }) => (
+const LandscapesPage = ({ data }) => (
   <Layout>
     <BannerWapper>
       <h1 id="banner">Jenelle's Photo Gallery</h1>
-      <h2 id="banner">Flowers</h2>
+      <h2 id="banner">Landscapes</h2>
     </BannerWapper>
 
     <ul style={{ listStyle: "none" }}>
@@ -53,7 +53,7 @@ const FlowersPage = ({ data }) => (
   </Layout>
 )
 
-export default FlowersPage
+export default LandscapesPage
 
 /* CSS in JS Style Components */
 
@@ -68,23 +68,6 @@ const BannerWapper = styled.div`
 ` /* end BannerWrapper */
 
 const DisplayWrapper = styled.div`
-  /* MEDIA QUERY FOR LARGE SCEENS */
-  @media screen and (min-width: 992px) {
-    #container {
-      #image {
-        grid-area: image;
-      }
-
-      display: grid;
-      border: 1px solid #000;
-      grid-gap: 10px;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-
-      grid-template-areas: ". image .";
-    }
-  }
-
-  /* MOBILE FIRST LAYOUT */
   #container {
     /* grid area declarations */
 
