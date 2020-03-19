@@ -49,7 +49,7 @@ const Navbar = () => {
 }
 
 export default Navbar
-
+// Mobile first screen size less than 350px
 //style the navbar with media query
 const NavWrapper = styled.div`
   .navbar {
@@ -71,10 +71,10 @@ const NavWrapper = styled.div`
     color: white;
 
     border: solid 0.1rem white;
-    border-radius: 0.3rem;
-    font-size: 0.75rem;
+    border-radius: 0.2rem;
+    font-size: 0.5rem;
     padding: 0.1rem 0.3rem;
-    margin: 0.5rem;
+    margin: 0.2rem;
     text-transform: capitalize;
   }
   .nav-link:hover {
@@ -82,5 +82,33 @@ const NavWrapper = styled.div`
     background: white;
     color: black;
     cursor: pointer;
+  }
+  /*large screen style the navbar with media query */
+  @media screen and (min-width: 900px) {
+    .nav-link {
+      text-decoration: none;
+      color: white;
+
+      border: solid 0.1rem white;
+      border-radius: 0.3rem;
+      font-size: 1rem;
+      padding: 0.1rem 0.3rem;
+      margin: 1rem;
+      text-transform: capitalize;
+    }
+  }
+  /*Mid range style the navbar with media query*/
+  @media screen and (min-width: 351px) and (max-width: 900px) {
+    .nav-link {
+      text-decoration: none;
+      color: white;
+
+      border: solid 0.1rem white;
+      border-radius: 0.3rem;
+      font-size: 1rem;
+      padding: 0.1rem 0.3rem;
+      margin: 1rem;
+      text-transform: capitalize;
+    }
   }
 `
