@@ -130,7 +130,8 @@ const DisplayWrapper = styled.div`
         font-size: 1rem;
         letter-spacing: 0.1rem;
         line-height: 0.9rem;
-        font-family: Georgia, "Times New Roman", Times, serif;
+        font-family: Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+        font-style: italic;
       }
     }
     #image {
@@ -141,7 +142,8 @@ const DisplayWrapper = styled.div`
       font-size: 0.7rem;
       letter-spacing: 0.1rem;
       line-height: 0.9rem;
-      font-family: Georgia, "Times New Roman", Times, serif;
+      font-family: Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+      font-style: italic;
     }
   }
 ` /* end DisplayWrapper */

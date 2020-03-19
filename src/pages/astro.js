@@ -30,7 +30,7 @@ const AstroPage = ({ data }) => (
   <Layout>
     <BannerWapper>
       <h1 id="banner">Jenelle's Photo Gallery</h1>
-      <h2 id="banner">Astro</h2>
+      <h2 id="h2banner">Astro</h2>
     </BannerWapper>
 
     <ul style={{ listStyle: "none" }}>
@@ -62,23 +62,40 @@ const BannerWapper = styled.div`
     text-align: center;
     font-size: 0.75rem;
     margin: 0.5rem;
-    letter-spacing: 0.1rem;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    letter-spacing: 0.4rem;
+    font-family: Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+    font-style: italic;
   }
+
+  #h2banner {
+    text-align: center;
+    font-size: 0.75rem;
+    margin: 0.5rem;
+    letter-spacing: 0.2rem;
+    font-family: Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+
   /*600px and above style  with media query*/
   @media screen and (min-width: 600px) {
     #banner {
       text-align: center;
       font-size: 1rem;
       margin: 1rem;
-      letter-spacing: 0.1rem;
-      font-family: Georgia, "Times New Roman", Times, serif;
+      letter-spacing: 0.4rem;
+      font-family: Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+      font-style: italic;
+    }
+    #h2banner {
+      text-align: center;
+      font-size: 1rem;
+      margin: 0.5rem;
+      letter-spacing: 0.2rem;
+      font-family: Roboto, "Open Sans", "Helvetica Neue", sans-serif;
     }
   }
 ` /* end BannerWrapper */
 
 const DisplayWrapper = styled.div`
-  /* MOBILE FIRST LAYOUT */
   #container {
     /* grid area declarations */
 
@@ -113,9 +130,9 @@ const DisplayWrapper = styled.div`
       font-size: 0.75rem;
       letter-spacing: 0.1rem;
       line-height: 0.9rem;
-      font-family: Georgia, "Times New Roman", Times, serif;
+      font-family: Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+      font-style: italic;
     }
-
     /*600px and above style  with media query*/
     @media screen and (min-width: 600px) {
       #title {
@@ -127,17 +144,20 @@ const DisplayWrapper = styled.div`
         font-size: 1rem;
         letter-spacing: 0.1rem;
         line-height: 0.9rem;
-        font-family: Georgia, "Times New Roman", Times, serif;
+        font-family: Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+        font-style: italic;
       }
     }
-
+    #image {
+    }
     #text {
       color: hsla(0, 22%, 93%, 0.8);
       margin: 0.5rem 0;
       font-size: 0.7rem;
       letter-spacing: 0.1rem;
       line-height: 0.9rem;
-      font-family: Georgia, "Times New Roman", Times, serif;
+      font-family: Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+      font-style: italic;
     }
   }
 ` /* end DisplayWrapper */
