@@ -73,8 +73,8 @@ const NavWrapper = styled.div`
     border: solid 0.1rem white;
     border-radius: 0.3rem;
     font-size: 0.75rem;
-    padding: 0.1rem 0.5rem;
-    margin: 1rem;
+    padding: 0.1rem 0.3rem;
+    margin: 0.5rem;
     text-transform: capitalize;
   }
   .nav-link:hover {
