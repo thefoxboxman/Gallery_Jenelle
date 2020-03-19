@@ -42,6 +42,12 @@ const Navbar = () => {
               Astro
             </Link>
           </li>
+
+          <li>
+            <Link to="/landscapes" className="nav-link">
+              Scapes
+            </Link>
+          </li>
         </ul>
       </nav>
     </NavWrapper>
@@ -72,43 +78,26 @@ const NavWrapper = styled.div`
 
     border: solid 0.1rem white;
     border-radius: 0.2rem;
+    font-family: Roboto, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 0.5rem;
     padding: 0.1rem 0.3rem;
     margin: 0.2rem;
     text-transform: capitalize;
   }
+
+  /*Mid range style the navbar with media query*/
+  @media screen and (min-width: 600px) {
+    .nav-link {
+      font-size: 0.75rem;
+      padding: 0.1rem 0.3rem;
+      margin: 1rem;
+    }
+  }
+
   .nav-link:hover {
-    font-size: 1rem;
+    font-size: 0.75rem;
     background: white;
     color: black;
     cursor: pointer;
-  }
-  /*large screen style the navbar with media query */
-  @media screen and (min-width: 900px) {
-    .nav-link {
-      text-decoration: none;
-      color: white;
-
-      border: solid 0.1rem white;
-      border-radius: 0.3rem;
-      font-size: 1rem;
-      padding: 0.1rem 0.3rem;
-      margin: 1rem;
-      text-transform: capitalize;
-    }
-  }
-  /*Mid range style the navbar with media query*/
-  @media screen and (min-width: 351px) and (max-width: 900px) {
-    .nav-link {
-      text-decoration: none;
-      color: white;
-
-      border: solid 0.1rem white;
-      border-radius: 0.3rem;
-      font-size: 1rem;
-      padding: 0.1rem 0.3rem;
-      margin: 1rem;
-      text-transform: capitalize;
-    }
   }
 `

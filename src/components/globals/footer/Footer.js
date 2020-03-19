@@ -18,6 +18,7 @@ export default Footer
 const FooterWrapper = styled.div`
   display: flex;
   justify-content: center;
+  font-family: Roboto, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 0.8rem;
   a {
     color: whitesmoke;

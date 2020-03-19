@@ -60,14 +60,25 @@ export default LandscapesPage
 const BannerWapper = styled.div`
   #banner {
     text-align: center;
-    font-size: 1.5rem;
-    margin: 1rem;
+    font-size: 0.75rem;
+    margin: 0.5rem;
     letter-spacing: 0.1rem;
     font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  /*600px and above style  with media query*/
+  @media screen and (min-width: 600px) {
+    #banner {
+      text-align: center;
+      font-size: 1rem;
+      margin: 1rem;
+      letter-spacing: 0.1rem;
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
   }
 ` /* end BannerWrapper */
 
 const DisplayWrapper = styled.div`
+  /* MOBILE FIRST LAYOUT */
   #container {
     /* grid area declarations */
 
@@ -95,18 +106,31 @@ const DisplayWrapper = styled.div`
 
     #title {
       color: hsla(0, 22%, 93%, 1);
-      margin: 0.5rem 0 0;
-      padding-top: 2rem;
+      margin: 0.25rem 0 0;
+      padding-top: 0.25rem;
       text-align: center;
       text-transform: capitalize;
-      font-size: 1rem;
+      font-size: 0.75rem;
       letter-spacing: 0.1rem;
       line-height: 0.9rem;
       font-family: Georgia, "Times New Roman", Times, serif;
     }
 
-    #image {
+    /*600px and above style  with media query*/
+    @media screen and (min-width: 600px) {
+      #title {
+        color: hsla(0, 22%, 93%, 1);
+        margin: 0.5rem 0 0;
+        padding-top: 2rem;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        line-height: 0.9rem;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
     }
+
     #text {
       color: hsla(0, 22%, 93%, 0.8);
       margin: 0.5rem 0;
