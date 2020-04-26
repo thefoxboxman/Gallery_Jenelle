@@ -6,10 +6,10 @@ import styled from "styled-components"
 
 export const query = graphql`
   {
-    allSanityPhotos(sort: { fields: [date], order: [DESC] }) {
+    allSanityPhotos(limit: 100, sort: { fields: date, order: ASC }) {
       edges {
         node {
-          _id
+          id
           date
           title
           description
