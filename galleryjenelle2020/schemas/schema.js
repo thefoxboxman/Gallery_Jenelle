@@ -47,9 +47,9 @@ export default createSchema({
           type: 'string',
         },
         {
-          title: 'Date',
-          name: 'date',
-          type: 'date',
+          title: 'Datetime',
+          name: 'datetime',
+          type: 'datetime',
         },
         {
           title: 'Awards',
