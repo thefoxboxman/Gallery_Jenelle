@@ -8,7 +8,7 @@ export const query = graphql`
   {
     allSanityPhotos(
       filter: { astro: { eq: true } }
-      sort: { fields: datetime, order: ASC }
+      sort: { fields: datetime, order: DESC }
     ) {
       edges {
         node {
