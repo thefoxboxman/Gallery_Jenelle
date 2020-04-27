@@ -6,11 +6,14 @@ import styled from "styled-components"
 
 export const query = graphql`
   {
-    allSanityPhotos(filter: { landscapes: { eq: true } }) {
+    allSanityPhotos(
+      filter: { landscapes: { eq: true } }
+      sort: { fields: datetime, order: ASC }
+    ) {
       edges {
         node {
           _id
-          date
+          datetime
           title
           description
           image {
@@ -43,7 +46,7 @@ const LandscapesPage = ({ data }) => (
                 <Image fluid={photo.image.asset.fluid} alt={photo.title} />
               </div>
               <div id="text">
-                {photo.description}................{photo.date}
+                {photo.description}................{photo.datetime}
               </div>
             </div>
           </DisplayWrapper>
