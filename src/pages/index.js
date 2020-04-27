@@ -32,7 +32,8 @@ export const query = graphql`
 const IndexPage = ({ data }) => (
   <Layout>
     <BannerWapper>
-      <h1 id="banner">Jenelle's Photo Gallery</h1>
+      <div id="banner"></div>
+      {/* <h1 id="banner">Jenelle's Photo Gallery</h1> */}
     </BannerWapper>
 
     <ul style={{ listStyle: "none" }}>
@@ -63,7 +64,8 @@ const BannerWapper = styled.div`
   #banner {
     text-align: center;
     font-size: 0.75rem;
-    margin: 0.5rem;
+    padding-top: 4rem;
+    /* margin: 0.5rem; */
     letter-spacing: 0.4rem;
     font-family: Roboto, "Open Sans", "Helvetica Neue", sans-serif;
     font-style: italic;
@@ -73,7 +75,8 @@ const BannerWapper = styled.div`
     #banner {
       text-align: center;
       font-size: 1rem;
-      margin: 1rem;
+      padding-top: 4rem;
+      /* margin: 1rem; */
       letter-spacing: 0.4rem;
       font-family: Roboto, "Open Sans", "Helvetica Neue", sans-serif;
       font-style: italic;
