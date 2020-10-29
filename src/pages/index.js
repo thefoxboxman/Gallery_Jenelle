@@ -46,7 +46,9 @@ const IndexPage = ({ data }) => (
                 <Image fluid={photo.image.asset.fluid} alt={photo.title} />
               </div>
               <div id="text">
-                {photo.description}................{photo.datetime}
+                {photo.description}
+{/*................{photo.datetime}  */}
+
               </div>
             </div>
           </DisplayWrapper>
