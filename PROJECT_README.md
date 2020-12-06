@@ -26,8 +26,8 @@ Login through Lastpass (as for Photo a Day site) using Github logon
 Export from Lr at 3000k resolution 72 dpi with watermark
 
 ## Live Site
+https://gallery-jenelle.netlify.app/
 
-https://gallery-jenelle.netlify.com/
 
 
 
