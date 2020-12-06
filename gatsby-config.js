@@ -41,11 +41,10 @@ module.exports = {
         icon: `src/images/JA_Avatar_400x400.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+   {
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          {
+        fonts: [ {
             family: `Roboto`,
             variants: [`Light 300 Italic`, `Regular 400`, `Bold 700 Italic`],
           },
@@ -54,8 +53,24 @@ module.exports = {
             variants: [`400`, `700`],
           },
         ],
-      },
+        display: 'swap'
+      }
     },
+    // {
+    //   resolve: `gatsby-plugin-prefetch-google-fonts`,
+    //   options: {
+    //     fonts: [
+    //       {
+    //         family: `Roboto`,
+    //         variants: [`Light 300 Italic`, `Regular 400`, `Bold 700 Italic`],
+    //       },
+    //       {
+    //         family: `Open Sans`,
+    //         variants: [`400`, `700`],
+    //       },
+    //     ],
+    //   },
+    // },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
