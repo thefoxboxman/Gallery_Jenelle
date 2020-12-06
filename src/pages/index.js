@@ -6,7 +6,7 @@ import styled from "styled-components"
 
 export const query = graphql`
   {
-    allSanityPhotos(limit: 200, sort: { fields: datetime, order: DESC }) {
+    allSanityPhotos(limit: 400, sort: { fields: datetime, order: DESC }) {
       edges {
         node {
           id
