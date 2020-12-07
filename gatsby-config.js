@@ -44,14 +44,9 @@ module.exports = {
    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [ {
-            family: `Roboto`,
-            variants: [`Light 300 Italic`, `Regular 400`, `Bold 700 Italic`],
-          },
-          {
-            family: `Open Sans`,
-            variants: [`400`, `700`],
-          },
+        fonts: [ 
+            `Roboto \:300i, 400, 700i`,
+             `Open Sans \:400, 700`,
         ],
         display: 'swap'
       }
